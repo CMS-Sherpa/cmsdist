@@ -1,5 +1,5 @@
-### RPM external geant4 11.3.ref09
-%define tag 0eef0d9ac0fb44bff98dabfe008cf8a3149e91db
+### RPM external geant4 11.3.ref07
+%define tag 5abed18b8d0e8564416e6288cefb4e3f7941b3b5
 %define branch cms/v%{realversion}
 %define github_user cms-externals
 Source: git+https://github.com/%github_user/%{n}.git?obj=%{branch}/%{tag}&export=%{n}.%{realversion}&output=/%{n}.%{realversion}-%{tag}.tgz
@@ -34,7 +34,7 @@ cmake ../%{n}.%{realversion} \
   -DGEANT4_BUILD_VERBOSE_CODE=OFF \
   -DGEANT4_BUILD_BUILTIN_BACKTRACE=OFF \
 %if %{enable_vecgeom}
-  -DGEANT4_USE_USOLIDS="all" \
+  -DGEANT4_USE_USOLIDS="OFF" \
   -DVecGeom_DIR=${VECGEOM_ROOT}/lib64/cmake/VecGeom \
   -DVecCore_DIR=${VECGEOM_ROOT}/lib64/cmake/VecCore \
 %endif
