@@ -1,5 +1,5 @@
 ### RPM cms fakesystem 1.0
-## REVISION 1017
+## REVISION 1016
 ## NOCOMPILER
 ## NO_VERSION_SUFFIX
 
@@ -50,7 +50,6 @@ Provides: perl(Tk::DialogBox)
 Provides: perl(Tk::ROText)
 Provides: perl(constant)
 Provides: perl(full)
-Provides: perl(bigint)
 
 #################################
 # Needed by git on SLC7
